@@ -25,11 +25,14 @@ public class AuthController {
             address a=new address();
             a.setLine_one("cax");
             a.setLine_two("qxwxw");
+            b.setAdd(a);
+
 
             location l=new location();
 
             l.setLine_1("1.2344");
             l.setLine_2("2.45");
+            b.setLoc(l);
 
             return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body(b);
 
