@@ -11,13 +11,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class AuthController {
 
-//    @RequestMapping(method = RequestMethod.POST,path = "/lang/{language}/logindata")
-//    public ResponseEntity doLogin(@PathVariable String language,
-//                                  @RequestBody LoginRequest loginData ){
-//
-//        return ResponseEntity.ok(loginData.getEmail()+loginData.getPassword());
-
-
         @RequestMapping(method = RequestMethod.POST,path = "/lang/{language}/logindata")
         public ResponseEntity doLogin(@PathVariable String language,
                 @RequestBody LoginRequest loginData ){
