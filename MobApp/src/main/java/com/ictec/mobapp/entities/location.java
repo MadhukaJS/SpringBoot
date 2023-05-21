@@ -1,6 +1,13 @@
-package com.ictec.mobapp;
+package com.ictec.mobapp.entities;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+@Entity
 public class location {
+    @Id
+    @GeneratedValue
+    private long id;
     private String line_1;
     private String line_2;
 
